@@ -1,0 +1,174 @@
+@media screen and (max-width:900px){
+.grid-informacion{
+    display: flex;
+    div{
+        img{
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+}
+
+
+
+@media screen and (max-width:840px) {
+    header {
+        flex-direction: column;
+        position: static;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:494px) {
+    header {
+        flex-direction: column;
+        position: static;
+    }
+
+    .hero {
+        background-attachment: scroll;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 50px;
+        }
+
+        a {
+            font-size: 18px;
+            padding: 5px;
+            margin: 10px 5px 10px 5px;
+        }
+    }
+
+    .bienvenidos h2,
+    .bienvenidos h3 {
+        font-size: 24px;
+
+        div {
+            p {
+                font-size: 12px;
+                margin: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+    .pagos {
+
+        h2,
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .grid-galeria {
+        grid-template-columns: 30%;
+        grid-template-rows: auto;
+    }
+
+    .grid-informacion {
+        grid-template-columns: 1fr 1fr;
+
+        div {
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    .contacto {
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .contacto-formulario {
+        div {
+            display: block;
+            text-align: left;
+
+            input,
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+    header {
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    header {
+        nav {
+            ul {
+                flex-direction: column;
+                font-size: smaller;
+
+                li {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    .bienvenidos {
+
+        h2,
+        h3 {
+            font-size: 20px;
+        }
+
+        div {
+            p {
+                font-size: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .pagos {
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .imagenes{ 
+        h2 {
+        font-size: 20px;
+    }
+}
+
+    .grid-galeria{ 
+        grid-template-columns: 40%;
+        grid-template-rows: auto;
+        h3 {
+        font-size: 20px;
+    }
+}
+    .grid-informacion {
+        grid-template-columns: 1fr 1fr;
+        div{
+            img{
+                height: auto;
+            }
+        }
+    }
+}

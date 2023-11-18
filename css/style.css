@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&display=swap');
+
+/*!----------------------RESET------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*!--------------HEADER----------------------*/
+header {
+    background-color: rgb(91, 123, 79);
+    border: 2px solid rgb(238, 102, 18);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+
+header h1 {
+    color: white;
+    font-size: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    font-size: small;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*!--------------MAIN----------------------*/
+
+.hero {
+    color: rgb(238, 102, 18);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/huesos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    background-color: rgb(238, 102, 18);
+    padding: 15px;
+}
+
+.hero h3 {
+    color: white;
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 400;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(91, 123, 79);
+    border: rgb(238, 102, 18) solid;
+}
+
+.hero a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(238, 102, 18);
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+    border: solid rgb(91, 123, 79);
+    margin: 20px 10px 20px 10px;
+}
+
+.bienvenidos {
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bienvenidos h2 {
+    color: white;
+    background-color: rgb(91, 123, 79);
+    text-align: center;
+    font-style: none;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+    width: 100%;
+}
+
+.bienvenidos div p {
+    color: black;
+    margin: 20px 20px 15px 20px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.bienvenidos h3 {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 600;
+    font-weight: 800;
+    color: rgb(91, 123, 79);
+}
+
+.pagos {
+    background-color: beige;
+
+}
+
+.pagos h2 {
+    color: white;
+    background-color: rgb(91, 123, 79);
+    text-align: center;
+    font-style: none;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.pagos h3 {
+    text-align: center;
+    color: rgb(238, 102, 18);
+    font-weight: 500;
+}
+
+.pagos .pagos-contenedor div {
+    width: 250px;
+    height: 250px;
+    border: 2px solid rgb(91, 123, 79);
+    margin: 10px;
+    text-align: center;
+}
+
+.pagos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pagos div h3 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.pagos div p {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.pagos div a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(238, 102, 18);
+    padding: 5px;
+    border: solid rgb(91, 123, 79);
+}
+
+.imagenes {
+    background-color: rgb(91, 123, 79);
+}
+
+.imagenes h2 {
+    color: white;
+    background-color: rgb(91, 123, 79);
+    text-align: center;
+    font-style: none;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+.grid-galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: beige;
+}
+
+.grid-galeria div {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    gap: 15px;
+    background-color: beige;
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid rgb(238, 102, 18);
+}
+
+.grid-galeria h3 {
+    color: white;
+    background-color: rgb(91, 123, 79);
+    text-align: center;
+    font-style: none;
+    font-weight: 300;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 50px;
+    padding: 10px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+
+.informacion {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(91, 123, 79);
+}
+
+.informacion h2 {
+    color: white;
+    background-color: rgb(238, 102, 18);
+    text-align: center;
+    font-style: none;
+    font-weight: 300;
+}
+
+.grid-informacion {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    background-color: rgb(91, 123, 79);
+}
+
+.grid-informacion div img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border: 2px solid rgb(238, 102, 18);
+}
+
+
+.contacto {
+    background-color: beige;
+    height: 800px;
+}
+
+.contacto-formulario div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto h3 {
+    color: white;
+    font-weight: 800;
+    background-color: rgb(238, 102, 18);
+    text-align: center;
+    font-style: none;
+    font-weight: 300;
+    padding: 5px;
+    font-size: 30px;
+}
+
+
+
+/*!--------------FOOTER----------------------*/
+
+footer {
+    background-color: rgb(91, 123, 79);
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+footer h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
+/*!----------PSEUDOCLASES------*/
+.hero a:hover {
+    background-color: rgb(91, 123, 79);
+}
+
+.bienvenidos h3:hover {
+    background-color: rgb(238, 102, 18);
+    color: white;
+}
+
+.grid-galeria h3:hover {
+    color: rgb(238, 102, 18)
+}
+
+.pagos-contenedor a:hover {
+    background-color: rgb(91, 123, 79);
+}
+
+p::selection {
+    background-color: rgb(238, 102, 18);
+    color: white;
+}
+
+/*!----------MEDIA QUERY------*/
+
+
+@media screen and (max-width:840px) {
+    header {
+        flex-direction: column;
+        position: static;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:494px) {
+    header {
+        flex-direction: column;
+        position: static;
+    }
+
+    .hero {
+        background-attachment: scroll; 
+    }
+
+    .hero h2 {
+        font-size: 30px; 
+    }
+
+    .hero h3 {
+        font-size: 20px; 
+        margin: 50px; 
+    }
+
+    .hero a {
+        font-size: 18px; 
+        padding: 5px; 
+        margin: 10px 5px 10px 5px; 
+    }
+
+    .bienvenidos h2,  .bienvenidos h3 {
+        font-size: 24px; 
+    }
+
+    .bienvenidos div p {
+        font-size: 12px; 
+        margin: 5px;
+        text-align: center;
+    }
+
+    .pagos h2, .pagos h3{
+        font-size: 24px;
+    }
+
+    .grid-galeria {
+        grid-template-columns: 30%;
+        grid-template-rows: auto;
+    }
+
+    .grid-informacion {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-informacion div img {
+        height: auto;
+    }
+
+    .contacto h3 {
+        font-size: 24px;
+    }
+
+    .contacto-formulario div {
+        display: block;
+        text-align: left;
+    }
+    .contacto-formulario input, .contacto-formulario textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:440px){
+    header h1 {
+        font-size: 32px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    header nav ul li {
+        margin: 0px;
+    }
+
+    .bienvenidos h2, .bienvenidos h3{
+        font-size: 20px;
+    }
+    .bienvenidos div p{
+        font-size: 10px; 
+        margin: 5px;
+        text-align: center;
+    }
+    .pagos h2 {
+        font-size: 20px;
+}
+
+.pagos h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.imagenes h2{
+    font-size: 20px;
+}
+.grid-galeria h3{
+    font-size: 20px;
+}
+.grid-galeria {
+    grid-template-columns: 40%;
+    grid-template-rows: auto;
+}
+
+.grid-informacion {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-informacion div img {
+    height: auto;
+}
+
+}
+
+
+

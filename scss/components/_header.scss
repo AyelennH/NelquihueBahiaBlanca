@@ -1,0 +1,36 @@
+header {
+    background-color: rgb(91, 123, 79);
+    border: 2px solid rgb(238, 102, 18);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    h1 {
+        color: white;
+        font-size: 60px;
+    }
+
+    nav {
+        ul {
+            
+            list-style: none;
+            font-size: small;
+            display: flex;
+            li {
+                margin: 10px;
+                color: white;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        background-color:  rgb(238, 102, 18);
+                    }
+                }
+            }
+        }
+    }
+}
